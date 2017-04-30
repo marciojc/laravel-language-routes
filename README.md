@@ -26,3 +26,27 @@ Add the LanguageRoutes service provider to the `config/app.php` file in the `pro
 ],
 ```
 
+Define the available languages at `config/app.php` file below 'locale' like:
+
+```php
+'locales' => ['en', 'pt'],
+```
+
+After that you need to create the route files for each language available, for en at `resources/lang/en/routes.php`, like
+
+```php
+return [
+  'home'                  => '/en/',
+  'news'                  => '/en/news',
+];
+```
+
+and
+
+```php
+return [
+  'home'                  => '/',
+  'news'                  => '/noticias',
+];
+```
+
