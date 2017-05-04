@@ -14,7 +14,6 @@ class LanguageRoutesServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->loadHelpers();
     }
 
     /**
